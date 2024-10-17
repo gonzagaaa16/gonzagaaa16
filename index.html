@@ -1,33 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TWICE NO PARQUE DE DIVERSÃO</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AluraBooks</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
-  <body>
-      <main>
-            <div class="passo ativo" id="passo-0">
-               <p>Jeongyon estava dentro de um carro velho dirigindo em linha reta para a casa da Jihyo. Dentre uma floresta escura ela se encontra numa bifurcação, com 2 caminhos destintos, ela se questiona por qual direção deverá seguir... A sua direita há uma placa escrita "TWICECOASTER" e a placa esquerda "CASA DA JIHYO", por qual caminho..</p>
-              <button class="btn-proximo" data-proximo="1">Caminho direito</button>
-              <button class="btn-proximo" data-proximo="2">Caminho esquerdo</button>
-            </div>
-        
-        <div class="passo" id="passo-1">
-  <p>Jeongyeon decide ir para o caminho direito, curiosa pela placa "TWICECOASTER", enquanto ela seguia pelo camimnho o clima se tornava frio e cada vez mais escuro e misterioso, ela se questiona se deveria voltar ou seguir pelo caminho...</p>
-          <button class="btn-proximo" data-proximo="3">Seguir em frente</button>
-          <button class="btn-proximo" data-proximo="4">Voltar</button>
-          
-          </div>
-        </div>
-      </main>
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao" />
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+</body>
 
-  </body>
+</html>
